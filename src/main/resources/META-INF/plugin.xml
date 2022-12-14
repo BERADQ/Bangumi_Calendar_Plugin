@@ -1,0 +1,34 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.ninnana.Bangumi_Calendar</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Bangumi_Calendar</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="adqber123@out.look" url="https://github.com/BERADQ">BERADQ😆</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    <h1>Bangumi Calendar</h1>
+    这是一个可以在IDEA中查看季度番更新日的插件<br>
+    <a href="https://github.com/bangumi/api" target="_blank">番组计划开源API</a>
+    <a href="https://www.iconfont.cn" target="_blank">阿里巴巴矢量图标库</a>
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow factoryClass="com.ninnana.bangumi_calendar.window.BanFactory" id="Bangumi" anchor="right"
+                    icon="/iicon/bim_Ban.svg">
+        </toolWindow>
+    </extensions>
+</idea-plugin>
