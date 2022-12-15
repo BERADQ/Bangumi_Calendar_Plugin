@@ -22,4 +22,6 @@
 
 近期内会重写整个插件
 
-数据来源([Bangumi API](https://github.com/bangumi/api))|主要字体([得意黑](https://github.com/atelier-anchor/smiley-sans)|[SF-Mono-SC](https://github.com/soytony/SF-Mono-SC))
+数据来源([Bangumi API](https://github.com/bangumi/api))
+
+主要字体([得意黑](https://github.com/atelier-anchor/smiley-sans) | [SF-Mono-SC](https://github.com/soytony/SF-Mono-SC))

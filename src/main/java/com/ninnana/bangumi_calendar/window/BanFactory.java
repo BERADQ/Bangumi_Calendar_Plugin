@@ -30,13 +30,14 @@ public class BanFactory implements ToolWindowFactory
 			String wImage = "week";
 			String wNameCn = bangumi1.getWeekday().getCn();
 			String wSummary = "$$ThisIsWeek$$";
-			banBeanList.add(new BanBean(wImage,wNameCn,wSummary));
+			banBeanList.add(new BanBean(wImage,wNameCn,wSummary,-1));
 			for (Bangumi.ItemsBean item : bangumi1.getItems())
 			{
 				String mImage = (item.getImages() == null) ? null : item.getImages().getMedium();
 				String nameCn = Objects.equals(item.getName_cn(), "")? item.getName() : item.getName_cn();
 				String summary = item.getSummary();
-				banBeanList.add(new BanBean(mImage,nameCn,summary));
+				int id = item.getId();
+				banBeanList.add(new BanBean(mImage,nameCn,summary,id));
 			}
 		}
 		BangumiWindow bangumiWindow = new BangumiWindow(project, toolWindow,banBeanList);
